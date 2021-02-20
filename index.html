@@ -1,0 +1,99 @@
+<html>
+
+    <head>
+
+        <style>
+            header{
+                color: white;
+                background-color: #89b2db;
+                padding: 20px 0;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .lista-cadastro{
+                margin: 20px 0;
+                padding: 0 20px;
+                display: flex;
+            }
+            .lista-cadastro input[type='text']{
+                height:40px;
+                padding-left: 20px;
+                flex:1
+            }
+
+            .produto{
+                align-items: center;
+                padding: 0 30px;
+                display: flex;
+                border-bottom: 1px solid #ccc;
+               
+            }
+
+            .lista-produto h3{
+
+                flex: 1;
+            }
+
+            .produto .produto-price{
+                text-align: right;
+
+            }
+            .produto h3 >span{
+                background-color:#89b2db;
+                padding: 10px 8px;
+                border-radius:30px;
+            }
+            .remove{
+                outline: 0;
+                border: 0;
+                color:white;
+                text-align: center;
+                height: 40px;
+                width: 40px;
+                background-color: red;
+                cursor:pointer;
+            }
+            .produto h3:nth-of-type(1){
+
+                margin-left:10px;
+            }
+            
+
+
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <h2>App lista de Supermercado</h2>
+        </header>
+
+        <div class="lista-cadastro">
+
+            <input type="text" placeholder="Nome do produto..." name="nome_produto">
+            <input type="text" placeholder="Valor do produto..." name="valor_produto">
+            <input type="submit"   name="acao" value="Cadastrar produto">
+            
+            
+           
+        </div>
+
+
+        <div class="lista-produto" >
+            
+        </div>
+           
+    
+
+        <div class="soma-produto">
+            <h2>R$0,00</h2>
+        </div>
+        
+        <input type="button" name="clear" value="Limpar carrinho"/>
+
+        <script src="supermercado.js" type="text/javascript">
+            
+
+        </script>
+    </body>
+</html>
